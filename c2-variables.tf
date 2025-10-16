@@ -23,12 +23,14 @@ variable "instance_type" {
 
 
 }
+
+variable "instance_type" {
+  type    = string
+  default = "t2.micro"
+}
+
 variable "instance_keypair" {
-  description = "EC2 instance keypair name"
   type        = string
+  description = "Name of an existing EC2 key pair"
   default     = "terraform-keypair1"
-
-
-
-
 }

@@ -25,7 +25,7 @@ resource "aws_instance" "web" {
     <!DOCTYPE html>
     <html>
       <body style="background-color:rgb(250,210,210);">
-        <h1>Welcome to Stack Simplify - APP-${count.index + 1}</h1>
+        <h1>Welcome to oluwolewilliams.com terraform demo- APP-${count.index + 1}</h1>
         <p>Terraform Demo</p>
         <p>Application Version: V1</p>
       </body>

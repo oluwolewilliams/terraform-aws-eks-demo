@@ -22,7 +22,7 @@ resource "aws_instance" "web" {
 
     echo '<h1>Welcome to oluwolewilliams.com terraform demo1 - APP-1</h1>' | tee /var/www/html/index.html
     mkdir -p /var/www/html/app1
-    echo '<!DOCTYPE html> <html> <body style="background-color:rgb(250, 210, 210);"> <h1>Welcome to Stack Simplify - APP-1</h1> <p>Terraform Demo</p> <p>Application Version: V1</p> </body></html>' | tee /var/www/html/app1/index.html
+    echo '<!DOCTYPE html> <html> <body style="background-color:rgb(250, 210, 210);"> <h1>Welcome to oluwolewilliams.com terraform demo- APP-1</h1> <p>Terraform Demo</p> <p>Application Version: V1</p> </body></html>' | tee /var/www/html/app1/index.html
 
     TOKEN=$(curl -s -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
     curl -s -H "X-aws-ec2-metadata-token: $${TOKEN}" \
